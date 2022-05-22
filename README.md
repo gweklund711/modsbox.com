@@ -1,5 +1,5 @@
 # modsbox.com
-My website that I am currently using to display Reversle. The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website.
+My website that I am currently using to display Reversle. The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the qr codes on my trifold board.
 
 Disclaimer about Originality:
 -----
