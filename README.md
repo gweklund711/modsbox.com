@@ -1,5 +1,5 @@
 # modsbox.com
-My website that I am currently using to display Reversle. The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the qr codes on my trifold board.
+My website that I am currently using to display Reversle. The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the QR codes on my trifold board. Most of the word length modifications and the infinite word function can be found in around lines 950-1000 of the code.
 
 Disclaimer about Originality:
 -----
@@ -31,16 +31,16 @@ Challenges:
 
 Throughout this project, I had to overcome numerous challenges in order to reverse engineer and create these new programs. Here are some of the main issues that I faced in the creation of this project:
 
-Finding a way to obtain and modify the files of Wordle’s source code
-Searching through over 2000 lines of code in order to find and edit important sections of the program for my reverse engineering process
-Learning how the game organizes the position and amount of rows
-Figuring out the method to changing the amount of letters for a game
-Changing the amount of inputtable boxes displayed in the game (spaces to insert letters)
-Editing and reformatting the “la” dictionary (possible answers) and the “ta” dictionary (inputtable answers) multiple times
-Removing the daily word function from the game and creating the new infinite word function.
-Modifying the text and color to become different for each of my newly created variants
-Struggling to learn how to use JavaScript, a new programming language for me, as I tried to dissect this project (I’m most experienced with Swift, HTML, and C#)
-Creating a running host website for the project that contains links to each individual version of the game
+-Finding a way to obtain and modify the files of Wordle’s source code
+-Searching through over 2000 lines of code in order to find and edit important sections of the program for my reverse engineering process
+-Learning how the game organizes the position and amount of rows
+-Figuring out the method to changing the amount of letters for a game
+-Changing the amount of inputtable boxes displayed in the game (spaces to insert letters)
+-Editing and reformatting the “la” dictionary (possible answers) and the “ta” dictionary (inputtable answers) multiple times
+-Removing the daily word function from the game and creating the new infinite word function.
+-Modifying the text and colors to become different for each of my newly created variants
+-Struggling to learn how to use JavaScript, a new programming language for me, as I tried to dissect this project (I’m most experienced with Swift, HTML, and C#)
+-Creating a running host website for the project that contains links to each individual version of the game
 
 Steps to Obtaining the Files:
 -----
