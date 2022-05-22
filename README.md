@@ -1,6 +1,18 @@
 # modsbox.com
 My website that I am currently using to display Reversle. The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the QR codes on my trifold board. Most of the word length modifications and the infinite word function can be found in around lines 950-1000 of the code.
 
+Website Update History:
+-----
+
+
+5/22/22:
+-Modified the site to provide more information about the actual project, instead of solely using it as a means to display the product of my work. 
+-Added links to my GitHub and a Google Doc with the trifold board about the project.
+
+4/17/22:
+-Developed the website as a means of displaying Reversle, my exhibition project.
+
+
 Disclaimer about Originality:
 -----
 
