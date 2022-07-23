@@ -1,9 +1,11 @@
 # modsbox.com
-My website that I am currently using to display Reversle. The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the QR codes on my trifold board. Most of the word length modifications and the infinite word function can be found in around lines 950-1000 of the code.
+My website that I am currently using to display Reversle and RandErg. MOST OF THIS README FILE IS ABOUT REVERSLE, NOT RANDERG!!!! The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the QR codes on my trifold board. Most of the word length modifications and the infinite word function can be found in around lines 950-1000 of the code.
 
 Website Update History:
 -----
-
+7/22/22:
+-Added a main home page, with links to Reversle and RandErg as subdirectories.
+-Created RandErg, a subdirectory, that allows for a user to randomly generate rowing machine workouts within selected parameters.
 
 5/22/22:
 -Modified the site to provide more information about the actual project, instead of solely using it as a means to display the product of my work. 
@@ -13,14 +15,14 @@ Website Update History:
 -Developed the website as a means of displaying Reversle, my exhibition project.
 
 
-Disclaimer about Originality:
+(About Reversle) Disclaimer about Originality:
 -----
 
 I am not claiming that this is my own intellectual property, for I simply modified the existing open source code for the original Wordle website (I obtained the code before the site was bought by The New York Times)
 
 Special thanks to the developers and owners of the original game, for this project wouldn't have been possible without their original code. 
 
-Why I chose this Project:
+(About Reversle) Why I chose this Project:
 -----
 I decided to do this project for four main reasons. 
 
@@ -38,7 +40,7 @@ With this project, a majority of people already possess existing knowledge about
 
 So yeah, those are basically the four contributing factors for my decision to reverse-engineer Wordle as my project.
 
-Challenges:
+(About Reversle) Challenges:
 -----
 
 Throughout this project, I had to overcome numerous challenges in order to reverse engineer and create these new programs. Here are some of the main issues that I faced in the creation of this project:
@@ -54,7 +56,7 @@ Throughout this project, I had to overcome numerous challenges in order to rever
 -Struggling to learn how to use JavaScript, a new programming language for me, as I tried to dissect this project (I’m most experienced with Swift, HTML, and C#)
 -Creating a running host website for the project that contains links to each individual version of the game
 
-Steps to Obtaining the Files:
+(About Reversle) Steps to Obtaining the Files:
 -----
 
 In chrome, go to the original website: powerlanguage.co.uk 
@@ -66,7 +68,7 @@ Then, copy and paste the main.js file into the website. Once it’s pasted in, p
 By pressing this button, the file becomes beautified to the point that it can easily be modified.
 Finally, with this new beautified file, replace the original code in main.js with the new version. Now, we have a fully editable .html file and a fully editable .js file to use in this process.
 
-Editing the Wordle Dictionaries:
+(About Reversle) Editing the Wordle Dictionaries:
 -----
 
 In order to successfully change the number of letters in a Wordle game, I had to take two major steps. First of all, I was forced to edit a variety of variables and functions in order to remove or add characters. Although this took a while, I was eventually able to figure out Wordle’s letter input system via trial and error through editing lines of code. However, the second step quickly proved to be a momentous task. In this next step, I was going to have to edit the entire Wordle dictionary in order to include words with a different number of letters. 
@@ -106,7 +108,7 @@ With this file downloaded on my computer, I proceeded to repeat the entire proce
 
 Also, I wanted to create two more variants of Wordle (one with state abbreviations and one with six letters). For the state abbreviations version (State-le), I simply inserted all of the state abbreviations for the inputtable words and the potential answers in the variables. Then, I wanted to make Sixle (six letter Wordle). Thankfully, I was able to repeat the exact steps for Fourdle in order to make this version’s dictionary in a more timely manner. 
 
-Acknowledgements:
+(About Reversle) Acknowledgements:
 -----
 
 As I created this project, I used a variety of online resources in order to simplify the process. First of all, Sublime Text, a source code editor, was extremely helpful throughout the entire reverse engineering procedure, for it allowed me to easily create, modify, and compare the JavaScript and HTML files of this project. In addition, beautify.io was a beneficial website that allowed me to straightforwardly convert the original main.js file into an editable file. Next, I would like to acknowledge GitHub and it’s variety of contributors because this site allowed me to obtain a list of dictionary words and commonly used words in .txt files. Also, commaquote.azurewebsites.net allowed me to easily modify these .txt files to fit into the JavaScript array of strings format. Furthermore, Stack Overflow was an amazing forum that allowed for me to quickly gain assistance with issues that occurred throughout the project. Finally, I must express my greatest appreciation towards the creators of Wordle because I wouldn’t have been able to reverse engineer the game without their impressive website and source code. 
