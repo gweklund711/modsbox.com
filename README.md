@@ -3,15 +3,15 @@ My website that I am currently using to display Reversle and RandErg. Disclaimer
 
 Website Update History:
 -----
-7/22/22:
+7/22/22 (Modsbox 1.1):
 -Added a main home page, with links to Reversle and RandErg as subdirectories.
 -Created RandErg, a subdirectory, that allows for a user to randomly generate rowing machine workouts within selected parameters.
 
-5/22/22:
+5/22/22 (Modsbox 1.0):
 -Modified the site to provide more information about the actual project, instead of solely using it as a means to display the product of my work. 
 -Added links to my GitHub and a Google Doc with the trifold board about the project.
 
-4/17/22:
+4/17/22 (Reversle):
 -Developed the website as a means of displaying Reversle, my exhibition project.
 
 
