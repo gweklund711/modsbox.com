@@ -1,5 +1,5 @@
 # modsbox.com
-My website that I am currently using to display Reversle and RandErg. MOST OF THIS README FILE IS ABOUT REVERSLE, NOT RANDERG!!!! The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the QR codes on my trifold board. Most of the word length modifications and the infinite word function can be found in around lines 950-1000 of the code.
+My website that I am currently using to display Reversle and RandErg. Disclaimer: The majority of this readme.md file is about Reversle, not RandErg. The goal of Reversle, my exhibition (pretty much a science fair) project, was to reverse engineer the open source code of Wordle and create new variants of the game. Along with it, a major focus was that exhibition attendees would easily be able to interact with my project by playing it on the website or by scanning the QR codes on my trifold board. Most of the word length modifications and the infinite word function can be found in around lines 950-1000 of the code.
 
 Website Update History:
 -----
