@@ -3,6 +3,10 @@ My website that I am currently using to display Reversle and RandErg. Disclaimer
 
 Website Update History:
 -----
+7/25/22 (RandErg Update):
+-Changed 'select interval length' to 'select number of sets'. Now, users can select how many sets they want (1-6).
+-Fixed a major issue with the random number generator, which was messing up the entire random workout generation system.
+
 7/22/22 (Modsbox 1.1):
 -Added a main home page, with links to Reversle and RandErg as subdirectories.
 -Created RandErg, a subdirectory, that allows for a user to randomly generate rowing machine workouts within selected parameters.
