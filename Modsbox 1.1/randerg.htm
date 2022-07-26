@@ -28,15 +28,15 @@ table, th, td {
 
 RandErg by Gunnar Eklund<br>
 <table style="border-spacing:30px;">
-<p style="font-family: serif; font-size: 12pt; font-style: georgia;"> With this web project, users can generate their own Concept 2 Erg workouts based on a few parameters. First of all, there is an option to select an interval length. Shorter intervals contain more sets and short rest time, and longer intervals contain fewer sets and more rest time. From there, the user can generate their workout based off of measurements of either time or distance. So far, I've personally enjoyed using this generator, for it allows me to have greater workout variety when I'm erging at home.</p>
+<p style="font-family: serif; font-size: 12pt; font-style: georgia;"> With this web project, users can generate their own Concept 2 Erg workouts based on a few parameters. First of all, there is an option to select a number of sets for the workout. A smaller number of sets results in longer rest times and a larger number of sets results in shorter rest times. After the number of sets is selected, the user can generate their workout based off of measurements of either time or distance. So far, I've personally enjoyed using this generator, for it allows me to have greater workout variety when I'm erging at home.</p>
 <br>
 
 <img src="/img/erg.png" height="300px"><br>
 <br>
 
 <form>
-	<label style="font-family: Sans-serif; font-size: 24pt; font-style: verdana">Select Length of Interval:</label><br>
-	<input type="button" value="Very Short" onclick="workoutlengthOne()"><input type="button" value="Short" onclick="workoutlengthTwo()"><input type="button" value="Medium" onclick="workoutlengthThree()"><input type="button" value="Long" onclick="workoutlengthFour()"><input type="button" value="Very Long" onclick="workoutlengthFive()"><br>
+	<label style="font-family: Sans-serif; font-size: 24pt; font-style: verdana">Select Number of Sets:</label><br>
+	<input type="button" value="1" onclick="setOne()"><input type="button" value="2" onclick= "setTwo()"><input type="button" value="3" onclick= "setThree()"><input type="button" value="4" onclick=" setFour()"><input type="button" value="5" onclick= "setFive()"><input type="button" value="6" onclick= "setSix()"><br>
 	<br>
 	<label style="font-family: Sans-serif; font-size: 24pt; font-style: verdana">Do you want to generate a Time or a Distance Workout?:</label><br>
 	<input type="button" value="Generate Time Workout" onclick="printtimeWorkout()"><input type="button" value="Generate Distance Workout" onclick="printdisWorkout()"><br>
@@ -47,94 +47,102 @@ RandErg by Gunnar Eklund<br>
 </form>
 
 <script>
-	var workoutLength = "Error: Select a workout length";
-	function workoutlengthOne(){
-		workoutLength = 1;
+	var setNum = "Error: Select a number of sets";
+	function setOne(){
+		setNum = 1;
 	}
-	function workoutlengthTwo(){
-		workoutLength = 2;
+	function setTwo(){
+		setNum = 2;
 	}
-	function workoutlengthThree(){
-		workoutLength = 3;
+	function setThree(){
+		setNum = 3;
 	}
-	function workoutlengthFour(){
-		workoutLength = 4;
+	function setFour(){
+		setNum = 4;
 	}
-	function workoutlengthFive(){
-		workoutLength = 5;
+	function setFive(){
+		setNum = 5;
 	}
-	function generateWorkout(){
-		document.getElementById("workoutBox").value = workoutLength;
+	function setSix(){
+		setNum = 6;
 	}
+
 //rand function generates random numbers within a range and by steps. It works exactly the same as Python's 'randrange' method when the 'random' library is imported.
 	function rand(min, max, step){
-    var delta,
-        range,
-        rand;
-    if (arguments.length < 2){
-        max = min;
-        min = 0;
-    }
-    if (!step){
-        step = 1;
-    }
-    delta = max - min;
-    range = delta / step;
-    rand = Math.random();
-    rand *= range;
-    rand = Math.floor(rand);
-    rand *= step;
-    rand += min;
-    return rand;
+    		var delta,
+        	range,
+        	rand;
+    		if (arguments.length < 2){
+        		max = min;
+        		min = 0;
+    		}
+    		if (!step){
+    			step = 1;
+    		}
+    		delta = max - min;
+    		range = delta / step;
+    		rand = Math.random();
+    		rand *= range;
+    		rand = Math.floor(rand);
+    		rand *= step;
+    		rand += min;
+    		return rand;
 	}
-	
+
 	function printtimeWorkout() {
-  	if (workoutLength === 1) {
-  		document.getElementById("workoutBox").value = `The time per piece is ${rand(1, 5, 1)} minute(s). The stroke rate is ${rand(22, 28, 2)} spm. The workout is 6 sets with 1' rest.`;
-  	} else {
-    	if (workoutLength === 2) {
-    		document.getElementById("workoutBox").value = `The time per piece is ${rand(6, 14, 1)} minutes. The stroke rate is ${rand(20, 26, 2)} spm. The workout is 4 sets with 2' rest.`;
-    	} else {
-      		if (workoutLength === 3) {
-      			document.getElementById("workoutBox").value = `The time per piece is ${rand(15, 19, 1)} minutes. The stroke rate is ${rand(20, 24, 2)} spm. The workout is 3 sets with 3' rest.`;
-      		} else {
-        		if (workoutLength === 4) {
-        			document.getElementById("workoutBox").value = `The time per piece is ${rand(20, 25, 1)} minutes. The stroke rate is ${rand(20, 22, 2)} spm. The workout is 2 sets with 4' rest.`;
-        		} else {
-          			if (workoutLength === 5) {
-          				document.getElementById("workoutBox").value = `The time per piece is ${rand(26, 60, 1)} minutes. The stroke rate is 20 spm. The workout is 1 set.`;
-          			} else {
-          				document.getElementById("workoutBox").value = `Error Occurred - Please select an interval length.`;
-          				}
-        			}
-      			}
-    		}
-  		}
-	}
-	
+  		if (setNum === 1) {
+  			document.getElementById("workoutBox").value = `The time per piece is ${rand(31, 61, 1)} minutes. The stroke rate is 20 spm. The workout is 1 set.`;
+  		} else {
+    			if (setNum === 2) {
+    				document.getElementById("workoutBox").value = `The time per piece is ${rand(21, 31, 1)} minutes. The stroke rate is ${rand(20, 24, 2)} spm. The workout is 2 sets with 5' rest.`;
+    			} else {
+      				if (setNum === 3) {
+      					document.getElementById("workoutBox").value = `The time per piece is ${rand(15, 21, 1)} minute(s). The stroke rate is ${rand(20, 26, 2)} spm. The workout is 3 sets with 4' rest.`;
+      				} else {
+        				if (setNum === 4) {
+        					document.getElementById("workoutBox").value = `The time per piece is ${rand(11, 15, 1)} minutes. The stroke rate is ${rand(20, 28, 2)} spm. The workout is 4 sets with 3' rest.`;
+        				} else {
+          					if (setNum === 5) {
+          						document.getElementById("workoutBox").value = `The time per piece is ${rand(6, 11, 1)} minutes. The stroke rate is ${rand(22, 30, 2)} spm. The workout is 5 sets with 2' rest.`;
+          					} else {
+          						if (setNum === 6) {
+          							document.getElementById("workoutBox").value = `The time per piece is ${rand(1, 6, 1)} minute(s). The stroke rate is ${rand(24, 32, 2)} spm. The workout is 6 sets with 1' rest.`;
+          						} else {
+          							document.getElementById("workoutBox").value = `Error Occurred - Please select a number of sets.`;
+          						}
+        					}
+      					}
+    				}
+  			}
+		}
+	}	
 	function printdisWorkout() {
-  	if (workoutLength === 1) {
-  		document.getElementById("workoutBox").value = `The distance per piece is 1k. The stroke rate is ${rand(22, 28, 2)} spm. The workout is 6 sets with 1' rest.`;
-  	} else {
-    	if (workoutLength === 2) {
-    		document.getElementById("workoutBox").value = `The distance per piece is 2k. The stroke rate is ${rand(20, 26, 2)} spm. The workout is 4 sets with 2' rest.`;
-    	} else {
-      		if (workoutLength === 3) {
-      			document.getElementById("workoutBox").value = `The distance per piece is 3k. The stroke rate is ${rand(20, 24, 2)} spm. The workout is 3 sets with 3' rest.`;
-      		} else {
-        		if (workoutLength === 4) {
-        			document.getElementById("workoutBox").value = `The distance per piece is ${rand(4, 5, 1)}k. The stroke rate is ${rand(20, 22, 2)} spm. The workout is 2 sets with 4' rest.`;
-        		} else {
-          			if (workoutLength === 5) {
-          				document.getElementById("workoutBox").value = `The distance per piece is ${rand(6, 12, 1)}k. The stroke rate is 20 spm. The workout is 1 set.`;
-          			} else {
-          				document.getElementById("workoutBox").value = `Error Occurred - Please select an interval length.`;
-          				}
-        			}
-      			}
-    		}
-  		}
-	}
+  		if (setNum === 1) {
+  			document.getElementById("workoutBox").value = `The distance per piece is ${rand(5.5, 10.5, 0.5)}k. The stroke rate is 20 spm. The workout is 1 set.`;
+  		} else {
+    			if (setNum === 2) {
+    				document.getElementById("workoutBox").value = `The distance per piece is ${rand(3.5, 5.5, 0.5)}k. The stroke rate is ${rand(20, 24, 2)} spm. The workout is 2 sets with 5' rest.`;
+    			} else {
+      				if (setNum === 3) {
+      					document.getElementById("workoutBox").value = `The distance per piece is ${rand(2, 3.5, 0.5)}k. The stroke rate is ${rand(20, 26, 2)} spm. The workout is 3 sets with 4' rest.`;
+      				} else {
+        				if (setNum === 4) {
+        					document.getElementById("workoutBox").value = `The distance per piece is ${rand(1.5, 2.5, 0.5)}k. The stroke rate is ${rand(20, 28, 2)} spm. The workout is 4 sets with 3' rest.`;
+        				} else {
+          					if (setNum === 5) {
+          						document.getElementById("workoutBox").value = `The distance per piece is ${rand(1, 2, 0.5)}k. The stroke rate is ${rand(22, 30, 2)} spm. The workout is 5 sets with 2' rest.`;
+          					} else {
+          						if (setNum === 6) {
+          							document.getElementById("workoutBox").value = `The distance per piece is ${rand(0.5, 1.5, 0.5)}k. The stroke rate is ${rand(24, 32, 2)} spm. The workout is 6 sets with 1' rest.`;
+          						} else {
+          							document.getElementById("workoutBox").value = `Error Occurred - Please select a number of sets.`;
+          						}
+        					}
+      					}
+    				}
+  			}
+		}
+	}	
 </script>
 
 <tr><td><a href="reversle.htm">REVERSLE</a></td></tr>
